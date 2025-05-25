@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Node.js inside Docker!");
+  res.send("Hello from Node.js inside Docker! ");
 });
 
 app.listen(port, () => {

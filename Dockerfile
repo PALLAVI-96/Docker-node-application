@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18 # Use official Node.js image
 WORKDIR /app
 COPY package*.json ./
 RUN npm install 
