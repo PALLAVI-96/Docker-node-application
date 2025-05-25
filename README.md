@@ -3,7 +3,8 @@ Create package.json
       npm init -y
       npm install express
       
-Create index.js
+Create index.js 
+
 Create Dockerfile
 
       # Use official Node.js image
@@ -25,7 +26,16 @@ Create Dockerfile
       # Run the app
       CMD [ "npm", "start" ]
 Create .dockerignore
+
     node_modules
-Build docker images:  docker build -t my-node-image .
-Build Docker Container: docker run -itd --name node-conatiner -p 3001:3000 my-node-image
-Access the app at http://localhost:3001
+    
+Build docker images: 
+
+      docker build -t my-node-image .
+
+Build Docker Container: 
+
+      docker run -itd --name node-conatiner -p 3001:3000 my-node-image
+Access the app at 
+
+       http://localhost:3001
